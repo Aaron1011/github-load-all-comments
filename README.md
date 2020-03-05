@@ -3,10 +3,12 @@ A Tampermonkey script to automatically load all hidden comments on Github
 
 When this script is enabled, the 'Load Hidden Comments' button is triggered immediately on page load.
 
+To see this in action, visit https://github.com/rust-lang/rust/pull/65819. With this script enabled, the "Load Hidden Comments" button should disappear shortly after the page loads.
+
 ## Background
 
 Github has a "feature" that hides a large fraction of the comments in
-long issue/PR threads, requiring the user to click a "Show hidden button" to see them.
+long issue/PR threads, requiring the user to click a "Show hidden" button to see them.
 
 Not only can this cut off important parts of a
 discussion, clicking the button only reveals some of the hidden
@@ -29,3 +31,4 @@ This avoids the repeatedly trigger the 'Load Hidden Comments' button (incurring 
 This could stop working at any time - however, the current method has worked for several methods without any problems.
 
 Hopefully, GitHub either lets this continue to work, or provides a way to opt out of "hidden comments" entirely.
+. 
